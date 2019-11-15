@@ -1,0 +1,191 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* --- TOPBAR --- */
+@font-face{
+    font-family: Avenir;
+    src: url(Avenir.otf);
+}
+
+body {
+    font-family: Avenir;
+}
+
+.topbar {
+    background-image: url(banner.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 100px;
+    position: fixed;
+    z-index: 9;
+}
+
+.container2 {
+    float: left;
+    width: 100%;
+    
+}
+
+.main {
+    
+    width: 80%;
+    height: 1050px;
+    background-color: rgb(212, 212, 212);
+    margin: 200px auto;
+}
+
+.title {
+    font-size: 50px;
+    letter-spacing: 20px;
+    text-align: center;
+    font-weight: bolder;
+}
+
+.foto1 {
+    width: 50%;
+    float: left;
+    background-image: url(2.jpg);
+    width: 500px;
+    height: 500px;
+    background-size: cover;
+}
+
+.tokopedia {
+    
+    width: 50%;
+    float: left;
+}
+
+.tokopedia a{
+    float: left;
+    text-decoration: none;
+    color: white;
+    background-color: #00ce00;
+    padding: 40px 60px;
+    margin-top: 180px;
+    margin-left: 160px;
+}
+
+.tokopedia a:hover {
+    background-color: #6e6e6e;
+}
+
+.cf {
+    clear: both;
+}
+
+.foto2 {
+    width: 50%;
+    float: right;
+    background-image: url(3.jpg);
+    width: 500px;
+    height: 500px;
+    background-size: cover;
+}
+
+.shopee {
+    width: 50%;
+    float: left;
+}
+
+.shopee a{
+    float: left;
+    text-decoration: none;
+    color: white;
+    background-color: #ff7f16;
+    padding: 40px 60px;
+    margin-top: 180px;
+    margin-left: 160px;
+}
+
+.shopee a:hover {
+    background-color: #6e6e6e;
+}
+
+.foota a{
+    text-decoration: none;
+    color: grey;
+    padding-bottom: 10px;
+}
+.wa a{
+    width: 60px;
+    height: 60px;
+    background-image: url(wa.png);
+    background-size: cover;
+    position: fixed;
+    bottom: 12px;
+    right: 12px;
+}
+@media only screen and (max-width:900px) {
+    /* For mobile phones: */
+        .title {
+            font-size: 20px;
+        }
+        .topbar {
+            background-position: -108px 0px;
+        }
+        .main {
+            width: 90%;
+            height: 900px;
+            margin-top: 150px;
+        }
+
+        .foto1, .foto2 {
+            width: 100%;
+        
+        }
+        .foto2 {
+            margin-left: -50px;
+        }
+        .tokopedia a{
+            margin-left: 10px;
+            margin-top: -130px;
+            
+        }
+
+        .shopee {
+            margin-top: -150px;
+            margin-left: -150px;
+            position: absolute;
+    
+        }
+}
